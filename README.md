@@ -1,1 +1,1 @@
-# Fence Calculator
+# A Game of Hangman
