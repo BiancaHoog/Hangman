@@ -1,1 +1,1 @@
-# Hangman
+# Fence Calculator
