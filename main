@@ -1,0 +1,20 @@
+length = int(input("What is the length of the area?"))
+width = int(input("What is the width of the area?"))
+post_dist = int(input("How far apart would you like the posts?"))
+if (length+width)%post_dist==0:
+    print("Evenly Divisible")
+else:
+    print("Invalid: Must be Evenly Divisible by Post Distance")
+post_amt = ((length+width)/post_dist)
+board_length = int(input("How long would you like the board?"))
+if board_length < post_dist:
+    print("Invalid: Must be greater than post distance")
+board_amt = ((length+width)/board_length)
+user_board_amt = int(input("How many boards would you like across each post?"))
+post_cost = float(input("How much does each post cost? (no $ please)"))
+board_cost = float(input("How much does each board cost? (no $ please)"))
+print("Posts Required:", post_amt)
+print("Boards Required:", board_amt)
+print("Total Cost of Posts: $", (post_amt*post_cost))
+print("Total Cost of Boards: $", (board_amt*board_cost))
+print("Total Cost of Fence: $", (board_amt*board_cost)+(post_amt*post_cost))
